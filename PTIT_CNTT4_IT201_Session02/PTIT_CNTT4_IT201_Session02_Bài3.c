@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX 100;
+#define MAX 100
 void daoNguocMang(int arr[], int n) {
     int left =0;
     int right=n-1;
@@ -19,7 +19,7 @@ void daoNguocMang(int arr[], int n) {
 void inMang(int arr[], int n) {
     printf("[");
     for (int i = 0; i < n; i++) {
-        printf("%d,", arr[i]);
+        printf("%d", arr[i]);
         if (i < n-1) printf(",");
     }
     printf("]\n");
@@ -29,7 +29,7 @@ int main() {
     printf("nhap bo so test");
     scanf("%d", &t);
     while (t--) {
-        int n, arr[];
+        int n, arr[MAX];
 
         printf("nhap so phan tu (0<n<100):");
         scanf("%d", &n);
